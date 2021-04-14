@@ -11,7 +11,8 @@ go-cqhttp需要打开websocket功能
 
 docker: 
 ```
-docker run -e WS="ws://10.243.159.138:30010" -d --name=fudu fudu
+docker run -e WS="ws://10.243.159.138:30010" -d --name=fudu_rust varitia/fudu_rust
+
 ```
 
 docker compose:
@@ -19,5 +20,7 @@ docker compose:
 ```
 还没写好……
 ```
+
+现在不支持arm
 
 ps：代码写的比较烂，欢迎pr
