@@ -12,7 +12,7 @@ use std::env;
 
 
 fn main() {
-
+    thread::sleep(Duration::from_secs(5)); //延时5s启动
     let ws_url =env::var("WS").unwrap(); //"ws://10.243.159.138:30010";
     let (mut send_socket, send_response) =
         connect(Url::parse(&format!("{}/api", ws_url)).unwrap()).expect("Can't connect");
