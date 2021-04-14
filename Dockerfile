@@ -1,5 +1,5 @@
   
-FROM shtripok/rust-musl-builder AS BUILDER
+FROM shtripok/rust-musl-builder:arm AS BUILDER
 
 ADD --chown=rust:rust . ./
 
