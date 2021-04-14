@@ -1,5 +1,9 @@
   
+<<<<<<< HEAD
 FROM ekidd/rust-musl-builder:1.49.0 AS BUILDER
+=======
+FROM shtripok/rust-musl-builder:arm AS BUILDER
+>>>>>>> 93b45ce2c80ac408a69ffeecb33489181e26752c
 
 ADD --chown=rust:rust . ./
 
