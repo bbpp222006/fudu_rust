@@ -5,13 +5,12 @@ ADD --chown=rust:rust . ./
 
 
 RUN sudo chmod 777 ~/.cargo/config \
-    && echo '[source.crates-io]' >> ~/.cargo/config \
-    && echo 'replace-with = \047ustc\047' >> ~/.cargo/config \
-    && echo '[source.ustc]' >> ~/.cargo/config \
-    && echo 'registry = "git://mirrors.ustc.edu.cn/crates.io-index"' >> ~/.cargo/config \
     && cargo build --release
 
-
+#  && echo '[source.crates-io]' >> ~/.cargo/config \
+#     && echo 'replace-with = \047ustc\047' >> ~/.cargo/config \
+#     && echo '[source.ustc]' >> ~/.cargo/config \
+#     && echo 'registry = "git://mirrors.ustc.edu.cn/crates.io-index"' >> ~/.cargo/config \
 
 
 FROM alpine:3.11
