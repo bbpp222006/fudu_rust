@@ -1,5 +1,5 @@
   
-FROM ekidd/rust-musl-builder:1.49.0 AS BUILDER
+FROM shtripok/rust-musl-builder AS BUILDER
 
 ADD --chown=rust:rust . ./
 
