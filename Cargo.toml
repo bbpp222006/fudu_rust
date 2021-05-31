@@ -16,3 +16,5 @@ url = {version="2.2.1"}
 tungstenite={version="0.13.0"}
 serde_json = ""
 crossbeam =""
+websocket={version=""}
+rand = "0.8.0"
